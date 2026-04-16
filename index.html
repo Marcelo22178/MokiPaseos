@@ -152,6 +152,7 @@
       border: 5px solid #fff;
       box-shadow: 0 6px 20px rgba(231,84,128,.25);
       transition: transform .3s;
+      background: transparent;
     }
     .hero-gallery img:hover { transform: scale(1.07); }
     .hero-gallery img:nth-child(2) {
@@ -445,6 +446,38 @@
       50%       { transform: translateY(-20px) rotate(15deg); }
     }
 
+    /* ── CARTOON DOGS (hero) ── */
+    .hero-gallery .cartoon-dog {
+      width: 180px; height: 180px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 6px 20px rgba(231,84,128,.25);
+      transition: transform .3s;
+      background: linear-gradient(145deg,#fff0f7,#fff8e8);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .hero-gallery .cartoon-dog:nth-child(2) {
+      width: 220px; height: 220px;
+      border-color: var(--pink);
+    }
+    .hero-gallery .cartoon-dog:hover { transform: scale(1.07); }
+    .hero-gallery .cartoon-dog svg { width: 100%; height: 100%; }
+
+    /* ── CAT SVG (sobre mí) ── */
+    .about-img .cat-wrap {
+      width: 220px; height: 220px;
+      border-radius: 50%;
+      border: 6px solid var(--pink);
+      box-shadow: 0 6px 24px rgba(231,84,128,.3);
+      background: linear-gradient(145deg,#ffe0f0,#fff0f7);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .about-img .cat-wrap svg { width: 105%; height: 105%; }
+
     /* ── RESPONSIVE ── */
     @media (max-width: 600px) {
       nav ul { display: none; }
@@ -481,9 +514,9 @@
       <a href="#contacto" class="btn btn-secondary">Contáctame</a>
     </div>
     <div class="hero-gallery">
-      <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=360&h=360&fit=crop&auto=format" alt="Perrito en paseo" />
-      <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=440&h=440&fit=crop&auto=format" alt="Perro feliz" />
-      <img src="https://images.unsplash.com/photo-1601979031925-424e53b6caaa?w=360&h=360&fit=crop&auto=format" alt="Perrita con correa" />
+      <img src="asset/animado%201.png" alt="Perrito animado 1" />
+      <img src="asset/animado%202.png" alt="Perrito animado 2" />
+      <img src="asset/animado%203.png" alt="Perrito animado 3" />
     </div>
   </section>
 
@@ -522,12 +555,10 @@
     <div class="divider"></div>
     <p class="section-subtitle">Momentos que capturamos en cada aventura</p>
     <div class="gallery-grid">
-      <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=480&h=480&fit=crop&auto=format" alt="Perros corriendo" />
-      <img src="https://images.unsplash.com/photo-1560743641-3914f2c45636?w=480&h=480&fit=crop&auto=format" alt="Perro en parque" />
-      <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=480&h=480&fit=crop&auto=format" alt="Perrito paseando" />
-      <img src="https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?w=480&h=480&fit=crop&auto=format" alt="Perro feliz al aire libre" />
-      <img src="https://images.unsplash.com/photo-1534361960057-19f4434bd4cb?w=480&h=480&fit=crop&auto=format" alt="Perrito en paseo" />
-      <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=480&h=480&fit=crop&auto=format" alt="Perro corriendo" />
+      <img src="asset/WhatsApp%20Image%202026-04-06%20at%202.02.23%20PM.jpeg" alt="Perrito cliente 1" />
+      <img src="asset/WhatsApp%20Image%202026-04-07%20at%2010.10.57%20AM.jpeg" alt="Perrito cliente 2" />
+      <img src="asset/WhatsApp%20Image%202026-04-09%20at%203.19.42%20PM.jpeg" alt="Perrito cliente 3" />
+      <img src="asset/WhatsApp%20Image%202026-04-10%20at%203.46.19%20PM.jpeg" alt="Perrito cliente 4" />
     </div>
   </section>
 
@@ -578,7 +609,45 @@
     <div class="divider"></div>
     <div class="about-inner">
       <div class="about-img">
-        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=440&h=440&fit=crop&auto=format" alt="Paseadora con perrito" />
+        <div class="cat-wrap">
+          <svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+            <!-- Cuerpo -->
+            <ellipse cx="100" cy="185" rx="55" ry="32" fill="#ffb6d9"/>
+            <!-- Cola -->
+            <path d="M148 178 Q185 155 175 128 Q165 112 153 128" fill="none" stroke="#ff80b3" stroke-width="14" stroke-linecap="round"/>
+            <!-- Cabeza -->
+            <circle cx="100" cy="102" r="62" fill="#ffb6d9"/>
+            <!-- Orejas -->
+            <polygon points="55,58 38,8 78,52" fill="#ffb6d9"/>
+            <polygon points="145,58 162,8 122,52" fill="#ffb6d9"/>
+            <!-- Orejas internas -->
+            <polygon points="59,55 47,18 75,51" fill="#ff80b3"/>
+            <polygon points="141,55 153,18 125,51" fill="#ff80b3"/>
+            <!-- Ojos -->
+            <ellipse cx="78" cy="97" rx="14" ry="17" fill="white"/>
+            <ellipse cx="122" cy="97" rx="14" ry="17" fill="white"/>
+            <ellipse cx="78" cy="99" rx="9" ry="13" fill="#2d1b3d"/>
+            <ellipse cx="122" cy="99" rx="9" ry="13" fill="#2d1b3d"/>
+            <circle cx="81" cy="94" r="3" fill="white"/>
+            <circle cx="125" cy="94" r="3" fill="white"/>
+            <!-- Nariz -->
+            <polygon points="100,118 94,126 106,126" fill="#ff6699"/>
+            <!-- Boca -->
+            <path d="M94 126 Q100 133 106 126" fill="none" stroke="#ff6699" stroke-width="2"/>
+            <path d="M87 131 Q100 140 113 131" fill="none" stroke="#ff6699" stroke-width="1.5"/>
+            <!-- Bigotes -->
+            <line x1="22" y1="114" x2="88" y2="120" stroke="#cc77aa" stroke-width="1.5"/>
+            <line x1="22" y1="124" x2="88" y2="124" stroke="#cc77aa" stroke-width="1.5"/>
+            <line x1="112" y1="120" x2="178" y2="114" stroke="#cc77aa" stroke-width="1.5"/>
+            <line x1="112" y1="124" x2="178" y2="124" stroke="#cc77aa" stroke-width="1.5"/>
+            <!-- Rubor -->
+            <circle cx="62" cy="120" r="13" fill="#ff99cc" opacity="0.5"/>
+            <circle cx="138" cy="120" r="13" fill="#ff99cc" opacity="0.5"/>
+            <!-- Moño -->
+            <path d="M74 50 Q100 37 126 50 Q100 63 74 50Z" fill="#e75480"/>
+            <circle cx="100" cy="50" r="6" fill="#ff80aa"/>
+          </svg>
+        </div>
         <div class="paw-badge">🐾</div>
       </div>
       <div class="about-text">
@@ -591,48 +660,6 @@
           <span class="tag">📍 Residente del edificio</span>
           <span class="tag">📸 Fotos incluidas</span>
           <span class="tag">✅ Confiable</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIOS -->
-  <section id="testimonios">
-    <h2 class="section-title">Lo que dicen los <span>dueños</span></h2>
-    <div class="divider"></div>
-    <p class="section-subtitle">La opinión de nuestros clientes peludos (y sus dueños)</p>
-    <div class="testimonios-grid">
-      <div class="testimonio">
-        <div class="stars">★★★★★</div>
-        <p>"Francisca es increíble. Siempre puntual y manda fotos de Toby durante todo el paseo. ¡Mi perrito la adora!"</p>
-        <div class="testimonio-author">
-          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=96&h=96&fit=crop&auto=format" alt="Camila" />
-          <div>
-            <strong>Camila R.</strong>
-            <span>Dueña de Toby 🐩</span>
-          </div>
-        </div>
-      </div>
-      <div class="testimonio">
-        <div class="stars">★★★★★</div>
-        <p>"El plan semanal es genial. Luna llega cansada y feliz cada tarde. Vale cada peso y más. ¡100% recomendada!"</p>
-        <div class="testimonio-author">
-          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=96&h=96&fit=crop&auto=format" alt="Andrés" />
-          <div>
-            <strong>Andrés M.</strong>
-            <span>Dueño de Luna 🐕</span>
-          </div>
-        </div>
-      </div>
-      <div class="testimonio">
-        <div class="stars">★★★★★</div>
-        <p>"Es vecina así que le tengo toda la confianza. Rocky ya la espera en la puerta cada mañana, ¡la quiere mucho!"</p>
-        <div class="testimonio-author">
-          <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=96&h=96&fit=crop&auto=format" alt="Valentina" />
-          <div>
-            <strong>Valentina P.</strong>
-            <span>Dueña de Rocky 🐾</span>
-          </div>
         </div>
       </div>
     </div>
